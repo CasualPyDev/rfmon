@@ -21,8 +21,12 @@ THE SOFTWARE.
 */
 package main
 
-import "github/rfmon/cmd"
+import (
+	"rfmon/cmd"
+	"rfmon/socketsrv"
+)
 
 func main() {
 	cmd.Execute()
+	socketsrv.RfmonListener()
 }
