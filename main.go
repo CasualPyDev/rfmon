@@ -23,10 +23,8 @@ package main
 
 import (
 	"rfmon/cmd"
-	"rfmon/socketsrv"
 )
 
 func main() {
 	cmd.Execute()
-	socketsrv.RfmonListener()
 }
